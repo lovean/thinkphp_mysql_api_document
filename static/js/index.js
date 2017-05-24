@@ -5,9 +5,16 @@ var vm = new Vue({
     },
     methods:{
         login:function (event) {
-            axios.get('http://localhost/phpmyadmin/').then(function (response) {
-                console.log(response);
-            })
+            alert("this is ok!");
+            axios.get('http://localhost:8888/index/Index/login')
+                .then(function(response){
+                    this.password = "123456789";
+                    alert("this is ok!");
+                    console.log(response);
+                })
+                .catch(function(err){
+                    console.log(err);
+                });
         }
     }
 })

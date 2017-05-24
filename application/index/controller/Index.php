@@ -8,7 +8,16 @@ class Index
         return ['name'=>'lovean'];
     }
 
+    public function tt(){
+        return ['name'=>'lovean'];
+    }
+
     public function login(){
-        return ['success'=>1,'msg'=>'登录成功','content'=>['username'=>'lovean']];
+
+        $password  = input("post.password");
+        cookie("lovean","1234");
+        //创建session
+        session("password",$password);
+        return ['success'=>1,'msg'=>'登录成功','content'=>['username'=>'lovean','password'=>$password]];
     }
 }

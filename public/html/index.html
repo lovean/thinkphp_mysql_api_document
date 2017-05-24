@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>项目文档</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div class="container-fluid main" id="main">
+    <div class="header">
+        <div class="navbar navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header nav-title ">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a  class="navbar-brand "href="index.html">比乐文档</a>
+
+                </div>
+                <div class="collapse navbar-collapse navbar-right is-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home">首页</span></a></li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </div>
+    </div>
+
+    <div class="content">
+        <form class="center-block col-xs-12 col-sm-6 .col-md-6 .col-lg-6">
+            <div class="form-group">
+                <label for="exampleInputEmail1">访问密码</label>
+                <input type="text" v-model="password" name="password" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <button type="button" @click="login" class="btn btn-default">提交</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="footer navbar-fixed-bottom">
+        龙游比乐网络科技有限公司  lovean
+    </div>
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
