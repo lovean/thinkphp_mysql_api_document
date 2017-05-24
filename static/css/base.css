@@ -3,3 +3,16 @@
     padding:0px;
     margin:0px;
 }
+.navbar{
+    border-bottom: 1px solid #cccccc;
+    box-shadow: 6px 6px 6px #cccccc;
+}
+.icon-bar{
+    background: black;
+}
+.footer{
+    text-align: center;
+    font-size:14px ;
+    color: #cccccc;
+    padding: 10px;
+}

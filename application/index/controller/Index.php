@@ -5,6 +5,10 @@ class Index
 {
     public function index()
     {
-        return view("index");
+        return ['name'=>'lovean'];
+    }
+
+    public function login(){
+        return ['success'=>1,'msg'=>'登录成功','content'=>['username'=>'lovean']];
     }
 }
