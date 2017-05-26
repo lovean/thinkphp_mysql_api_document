@@ -1,12 +1,8 @@
 var vm = new Vue({
     el:'#main',
     data:{
-        ApiPackage:[
-        ],
-        ApiInfo:{
-        }
-
-
+        ApiPackage:{},
+        ApiInfo:{},
 
     },
     methods:{
@@ -17,17 +13,25 @@ var vm = new Vue({
         },
         getProjectApiPackage:function () {
             //请求接口，改变数据
-            this.ApiPackage = [
-                {'id':1,'name':'用户接口','content':[
-                    {'cid':1,'cname':'登陆接口'},
-                    {'cid':2,'cname':'注册接口'}
-                ]},
-                {'id':2,'name':'测试接口'},
-                {'id':3,'name':'公共接口'}
-            ];
+            this.ApiPackage = {'title':'停车场项目','packageList':
+                [
+                    {'id':1,'name':'用户接口','content':[
+                        {'cid':1,'cname':'登陆接口'},
+                        {'cid':2,'cname':'注册接口'}
+                    ]},
+                    {'id':2,'name':'测试接口','content':[
+                        {'cid':1,'cname':'登陆接口'},
+                        {'cid':2,'cname':'注册接口'}
+                    ]},
+                    {'id':3,'name':'公共接口','content':[
+                        {'cid':1,'cname':'登陆接口'},
+                        {'cid':2,'cname':'注册接口'}
+                    ]}
+                ]};
         },
         getApi:function (id) {
             vm.$data.ApiInfo = {
+                'name':'注册接口',
                 'url':'http://www.baidu.com',
                 'methodType':'post',
                 'in':[
