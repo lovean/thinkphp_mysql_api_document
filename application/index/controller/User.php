@@ -1,33 +1,33 @@
 <?php
-    namespace app\index\controller;
+namespace app\index\controller;
 
-    class User{
+class User{
 
-        public function __construct()
-        {
-            $password = session("password");
-            if(empty($password)){
-                die();
-            }
+    public function __construct()
+    {
+        $password = cookie("password");
+        if(empty($password)){
+            die();
         }
+    }
 
-        public function getProject(){
+    public function getProject(){
 
-            //»ñµÃµ½ÏîÄ¿
-            return [
-                'success'=>1,
-                'msg'=>'ÇëÇó³É¹¦',
-                'content'=>[
-                    ['id'=>1,'name'=>'lovean','time'=>time()],
-                    ['id'=>2,'name'=>'mylove','time'=>time()],
-                    ['id'=>2,'name'=>'ilike','time'=>time()],
-                ]
-            ];
-
-        }
-
+        //èŽ·å¾—åˆ°é¡¹ç›®
+        return [
+            'success'=>1,
+            'msg'=>'è¯·æ±‚æˆåŠŸ',
+            'content'=>[
+                ['id'=>1,'name'=>'lovean','time'=>time()],
+                ['id'=>2,'name'=>'mylove','time'=>time()],
+                ['id'=>2,'name'=>'ilike','time'=>time()],
+            ]
+        ];
 
     }
+
+
+}
 
 
 ?>
