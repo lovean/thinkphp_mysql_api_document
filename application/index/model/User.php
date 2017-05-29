@@ -10,9 +10,8 @@ use think\model;
 
 class User extends Model{
 
+    protected $password;
 
-    protected $pk = "id";
-    public $password;
-    public $projects;
+    protected $projects;
 
 }
