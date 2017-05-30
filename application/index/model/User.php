@@ -6,7 +6,8 @@
  * Time: 下午11:07
  */
 namespace app\index\model;
-use think\model;
+
+use think\Model;
 
 class User extends Model{
 

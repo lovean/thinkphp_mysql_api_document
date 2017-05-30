@@ -36,7 +36,6 @@ var vm = new Vue({
         getProjectApiPackage:function () {
             //请求接口，改变数据
             axios.post(getProjectUrl,{id:this.getQueryString("id"),projectid:this.getQueryString("id")}).then(function (a) {
-                console.log(a);
                 vm.$data.ApiPackage  = a.data;
             });
         },

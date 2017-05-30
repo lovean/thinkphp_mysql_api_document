@@ -1,4 +1,4 @@
-var baseUrl = "http://localhost:8081";
+var baseUrl = "";
 var loginUrl = baseUrl+"/index/Index/login";
 var getProjectUrl = baseUrl+"/index/Project/getProject";
 var getApiUrl = baseUrl+"/index/Project/getApi";
