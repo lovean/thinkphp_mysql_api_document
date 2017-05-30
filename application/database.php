@@ -13,13 +13,13 @@ return [
     // 数据库类型
     'type'           => 'mysql',
     // 服务器地址
-    'hostname'       => 'pmd.bilejie.com',
+    'hostname'       => 'localhsot',
     // 数据库名
     'database'       => 'apidoc',
     // 用户名
-    'username'       => 'apidoc',
+    'username'       => 'root',
     // 密码
-    'password'       => 'dream16887',
+    'password'       => 'root',
     // 端口
     'hostport'       => '3306',
     // 连接dsn
