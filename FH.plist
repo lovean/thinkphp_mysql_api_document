@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>FH</string>
+	<key>App URL</key>
+	<string>https://stg.n8nr.com:8080/LP7/ios/FH.ipa</string>
+	<key>Display Image URL</key>
+	<string></string>
+	<key>Full Size Image URL</key>
+	<string></string>
+</dict>
+</plist>
